@@ -1,0 +1,24 @@
+{
+  "name": "redux-template",
+  "version": "1.0.0",
+  "description": "Basic redux template",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && xcopy \"src/index.html\" \"dist/\" /F /Y && webpack-dev-server --content-base src/ --inline",
+    "build:prod": "webpack -p && xcopy \"src/index.html\" \"dist/\" /F /Y"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hendalGit/redux-template.git"
+  },
+  "keywords": [
+    "RT"
+  ],
+  "author": "Hendal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hendalGit/redux-template/issues"
+  },
+  "homepage": "https://github.com/hendalGit/redux-template#readme"
+}
